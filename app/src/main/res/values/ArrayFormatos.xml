@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listaFormatoIng">
+        <item>Kg.</item>
+        <item>gr.</item>
+        <item>Ud.</item>
+        <item>Litro</item>
+        <item>ml.</item>
+        <item>Bote/Botella</item>
+        <item>Bandeja</item>
+        <item>Caja</item>
+        <item>Lata</item>
+        <item>Manojo</item>
+        <item>Bolsa</item>
+    </string-array>
+    
+    
+    
+</resources>

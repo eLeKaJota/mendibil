@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomendibileapp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tlbAgregaIng"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="@drawable/fondo_transparente"
+        android:elevation="30dp"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:boxBackgroundColor="@color/fondo">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/txtPltNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="sentences"
+                android:hint="Nombre del ingrediente"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                app:boxBackgroundColor="@color/fondo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtIngPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Precio"
+                    android:numeric="integer|decimal"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spnFormato"
+                android:layout_width="119dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:boxBackgroundColor="@color/fondo">
+
+            <AutoCompleteTextView
+                android:id="@+id/txtIngProveedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="sentences"
+                android:completionThreshold="1"
+                android:hint="Proveedor"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnPltAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Añadir"
+            android:textSize="@dimen/textoCajas" />
+
+        <Button
+            android:id="@+id/btnEliminarIng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar ingrediente"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

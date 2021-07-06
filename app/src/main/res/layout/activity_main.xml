@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomendibile"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/logoMainAncho"
+            android:layout_height="@dimen/logoMainAlto"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logomend" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            android:text="Gestión de cocina"
+            android:textAlignment="center"
+            android:textColor="#a8dadc"
+            android:textSize="@dimen/textoBotonesMain" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/llbtnPlatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fondo_transparente"
+                        android:elevation="5dp"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <ImageButton
+                            android:id="@+id/btnPlatos"
+                            android:layout_width="@dimen/botonesMainAncho"
+                            android:layout_height="@dimen/botonesMainAlto"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/platos" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Platos"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/textoBotonesMain"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Recetas, Costes e información de tus platos." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llbtnIngrediente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fondo_transparente"
+                        android:elevation="3dp"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <ImageButton
+                            android:id="@+id/btnIngredientes"
+                            android:layout_width="@dimen/botonesMainAncho"
+                            android:layout_height="@dimen/botonesMainAlto"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ingredientes" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Ingredientes"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/textoBotonesMain"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="La materia prima de tu cocina." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llbtnCompras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fondo_transparente"
+                        android:elevation="3dp"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <ImageButton
+                            android:id="@+id/btnCompras"
+                            android:layout_width="@dimen/botonesMainAncho"
+                            android:layout_height="@dimen/botonesMainAlto"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/listacompra" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Lista de la compra"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/textoBotonesMain"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tus pedidos diarios bien organizados." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llbtnProveedores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fondo_transparente"
+                        android:elevation="3dp"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <ImageButton
+                            android:id="@+id/btnProveedores"
+                            android:layout_width="@dimen/botonesMainAncho"
+                            android:layout_height="@dimen/botonesMainAlto"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/proveedores" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Proveedores"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/textoBotonesMain"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="La agenda de tus proveedores de confianza." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llbtnAyuda"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fondo_transparente"
+                        android:elevation="3dp"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <ImageButton
+                            android:id="@+id/btnAyuda"
+                            android:layout_width="@dimen/botonesMainAncho"
+                            android:layout_height="@dimen/botonesMainAlto"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/info" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Ayuda"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/textoBotonesMain"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Información y ayuda para utilizar la app." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llbtnAjustes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fondo_transparente"
+                        android:elevation="3dp"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <ImageButton
+                            android:id="@+id/btnAjustes"
+                            android:layout_width="@dimen/botonesMainAncho"
+                            android:layout_height="@dimen/botonesMainAlto"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ajustes" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Ajustes"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Pon apunto la aplicación." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
